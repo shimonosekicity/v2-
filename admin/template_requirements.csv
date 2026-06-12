@@ -1,0 +1,3 @@
+subsidy_id,req_id,group,question_ja,question_en,question_zh,question_ko,question_vi,type,choices,required
+ijuu-shienkin,req1,移住元要件,転入前直近10年のうち通算5年以上、東京23区に在住、または東京圏在住かつ東京23区内へ通勤していましたか？,,,,,yesno,,true
+ijuu-shienkin,req2,就業等要件,次のいずれかに該当しますか？（就業／テレワーク／専門人材／創業）,,,,,choice,"[{""value"":""就業"",""label"":{""ja"":""県マッチングリスト掲載企業に週20時間以上・無期雇用で就業""}},{""value"":""テレワーク"",""label"":{""ja"":""自己の意思で移住し移住元の業務を継続""}},{""value"":""該当なし"",""label"":{""ja"":""いずれにも該当しない""},""disqualify"":true}]",true

@@ -1,0 +1,1151 @@
+{
+  "version": "2026.06.12",
+  "lastUpdated": "2026-06-12",
+  "subsidies": [
+    {
+      "id": "ijuu-shienkin",
+      "category": "移住・定住",
+      "name": {
+        "ja": "移住支援金",
+        "en": "Relocation Support Grant",
+        "zh": "移居支援金",
+        "ko": "이주 지원금",
+        "vi": "Trợ cấp hỗ trợ di cư"
+      },
+      "summary": {
+        "ja": "東京圏から下関市へ移住し就業・創業した方への支援金",
+        "en": "Support grant for those who relocated from the Tokyo metropolitan area to Shimonoseki for employment or entrepreneurship",
+        "zh": "为从东京圈移居至下关市并就业・创业者提供的支援金",
+        "ko": "도쿄권에서 시모노세키시로 이주하여 취업・창업한 분들을 위한 지원금",
+        "vi": "Trợ cấp hỗ trợ cho những người chuyển từ vùng Tokyo đến Shimonoseki để làm việc hoặc khởi nghiệp"
+      },
+      "amount": {
+        "ja": "単身60万円／2人以上100万円（18歳未満1人ごと+100万円）"
+      },
+      "contact": {
+        "name": "LiveHUB しものせき",
+        "tel": "0120-540-201",
+        "dept": "共創イノベーション課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/1122.html",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": {
+        "ja": "やまぐち創業補助金と合算で創業者は最大300万円"
+      },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "移住元要件",
+          "question": {
+            "ja": "転入前直近10年のうち通算5年以上、東京23区に在住、または東京圏（埼玉・千葉・東京・神奈川）在住かつ東京23区内へ通勤していましたか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "移住元要件",
+          "question": {
+            "ja": "転入直前に連続1年以上、東京23区に在住または東京23区内へ通勤していましたか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "就業等要件",
+          "question": {
+            "ja": "次のいずれかに該当しますか？（就業／テレワーク／専門人材／創業）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "choice",
+          "choices": [
+            { "value": "就業", "label": { "ja": "県マッチングリスト掲載企業に週20時間以上・無期雇用で就業" } },
+            { "value": "テレワーク", "label": { "ja": "自己の意思で移住し移住元の業務を継続（テレワーク）" } },
+            { "value": "専門人材", "label": { "ja": "プロフェッショナル人材事業等を利用し県内企業に新規就業" } },
+            { "value": "創業", "label": { "ja": "やまぐち創業補助金の交付決定を受けている" } },
+            { "value": "該当なし", "label": { "ja": "いずれにも該当しない" }, "disqualify": true }
+          ],
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "その他",
+          "question": {
+            "ja": "申請時において転入後3か月以上1年以内ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req5",
+          "group": "その他",
+          "question": {
+            "ja": "申請後5年以上継続して下関市に居住する意思がありますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req6",
+          "group": "その他",
+          "question": {
+            "ja": "市税の滞納がなく、暴力団関係者でありませんか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "yamaguchi-telework-ijuu",
+      "category": "移住・定住",
+      "name": {
+        "ja": "やまぐち創生テレワーク移住支援事業補助金",
+        "en": "Yamaguchi Telework Relocation Support Subsidy",
+        "zh": "山口创生远程办公移居支援事业补助金",
+        "ko": "야마구치 창생 재택근무 이주지원사업 보조금",
+        "vi": "Trợ cấp hỗ trợ di cư làm việc từ xa Yamaguchi"
+      },
+      "summary": {
+        "ja": "東京圏以外の大都市圏等から下関市へ移住し就業・テレワーク・創業した方への支援金",
+        "en": "Support grant for those who relocated from metropolitan areas outside Tokyo to Shimonoseki",
+        "zh": "为从东京圈以外的大都市圈移居至下关市并就业・远程办公・创业者提供的补助金",
+        "ko": "도쿄권 이외의 대도시권 등에서 시모노세키시로 이주하여 취업・재택근무・창업한 분을 위한 보조금",
+        "vi": "Trợ cấp cho những người chuyển từ vùng đô thị ngoài Tokyo đến Shimonoseki để làm việc hoặc khởi nghiệp"
+      },
+      "amount": {
+        "ja": "単身30万円／2人以上50万円（18歳未満1人ごと+50万円）"
+      },
+      "contact": {
+        "name": "LiveHUB しものせき",
+        "tel": "0120-540-201",
+        "dept": "共創イノベーション課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/1122.html",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "移住元要件",
+          "question": {
+            "ja": "転入前に以下いずれかの地域に在住または通勤していましたか？（東京圏23区除く／中京圏（愛知）／近畿圏（京都・大阪・兵庫）／広島県・福岡県）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "就業等要件",
+          "question": {
+            "ja": "次のいずれかに該当しますか？（就業／テレワーク／創業）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "choice",
+          "choices": [
+            { "value": "就業", "label": { "ja": "県リスト掲載企業に週20時間以上・無期雇用で就業" } },
+            { "value": "テレワーク", "label": { "ja": "自己の意思で移住し移住元の業務を継続（テレワーク）" } },
+            { "value": "創業", "label": { "ja": "やまぐち創業補助金の交付決定を受けている" } },
+            { "value": "該当なし", "label": { "ja": "いずれにも該当しない" }, "disqualify": true }
+          ],
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "その他",
+          "question": {
+            "ja": "申請時において転入後3か月以上1年以内ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "その他",
+          "question": {
+            "ja": "申請後5年以上継続して下関市に居住する意思があり、市税の滞納がありませんか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "shimonoseki-kurashi-support",
+      "category": "移住・定住",
+      "name": {
+        "ja": "下関暮らしサポート補助金（家賃補助）",
+        "en": "Shimonoseki Living Support Subsidy (Rent Assistance)",
+        "zh": "下关生活支援补助金（房租补贴）",
+        "ko": "시모노세키 생활지원 보조금 (임대료 보조)",
+        "vi": "Trợ cấp hỗ trợ cuộc sống Shimonoseki (Hỗ trợ tiền thuê nhà)"
+      },
+      "summary": {
+        "ja": "UIJターンによる転入者への家賃補助（世帯主39歳以下または子育て世帯）",
+        "en": "Rent assistance for UIJ-turn migrants (household head under 40 or child-rearing households)",
+        "zh": "为UIJ回流转入者提供房租补贴（户主39岁以下或有育儿家庭）",
+        "ko": "UIJ턴으로 전입한 분들을 위한 임대료 보조 (세대주 39세 이하 또는 육아 가정)",
+        "vi": "Hỗ trợ tiền thuê nhà cho người chuyển đến theo diện UIJ (chủ hộ dưới 40 tuổi hoặc hộ nuôi con nhỏ)"
+      },
+      "amount": {
+        "ja": "月上限1万円（世帯主39歳以下）／月上限2万円（中学生以下の子あり）、最長2年間"
+      },
+      "contact": {
+        "name": "LiveHUB しものせき",
+        "tel": "0120-540-201",
+        "dept": "共創イノベーション課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/1122.html",
+      "kiyouUrl": "",
+      "status": "closed",
+      "note": { "ja": "令和8年度新規申請受付終了" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "窓口利用要件",
+          "question": {
+            "ja": "転入前2年以内に以下いずれかを確認しましたか？（YYターン補助金証明書発行／お試し暮らし利用／移住フェア個別相談／移住体験ツアー参加／移住相談窓口で2回以上やりとり台帳記載／やまぐち暮らし支援センター連携）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "対象世帯",
+          "question": {
+            "ja": "世帯主が39歳以下、または中学生以下の子がいる世帯ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "居住・転入要件",
+          "question": {
+            "ja": "令和6年4月1日以降にUIJターンし、直近1年以上継続して市外に居住していましたか？また、転入後6か月以内に申請し、申請後5年以上継続居住の意思がありますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "対象外住宅",
+          "question": {
+            "ja": "居住している住宅は、公営住宅・社宅官舎寮・3親等以内の親族所有住宅ではありませんか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "teijuu-shorekin",
+      "category": "移住・定住",
+      "name": {
+        "ja": "定住奨励金",
+        "en": "Permanent Residence Incentive Grant",
+        "zh": "定居奖励金",
+        "ko": "정주 장려금",
+        "vi": "Tiền thưởng định cư lâu dài"
+      },
+      "summary": {
+        "ja": "豊浦・豊田・豊北等の総合支所管内に定住する世帯への奨励金",
+        "en": "Incentive grant for households settling in Toyoura, Toyota, Toyokita and surrounding areas",
+        "zh": "为定居于丰浦・丰田・丰北等综合分局管辖区域内的家庭提供的奖励金",
+        "ko": "도요우라・도요타・도요키타 등 종합지소 관내에 정주하는 가구를 위한 장려금",
+        "vi": "Tiền thưởng cho các hộ gia đình định cư trong khu vực Toyoura, Toyota, Toyokita và các vùng lân cận"
+      },
+      "amount": {
+        "ja": "1世帯10万円"
+      },
+      "contact": {
+        "name": "豊田／豊浦／豊北 総合支所 地域政策課",
+        "tel": "",
+        "dept": "地域政策課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "1世帯につき1回限り" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "居住地要件",
+          "question": {
+            "ja": "豊浦・豊田・豊北総合支所管内、蓋井島または六連島に居住していますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "住宅要件",
+          "question": {
+            "ja": "転入前後1年以内に自ら居住するための住宅を新築・購入・増築・賃借しましたか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "継続居住要件",
+          "question": {
+            "ja": "対象区域に6か月以上継続して居住していますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "申請単位",
+          "question": {
+            "ja": "過去にこの定住奨励金を受給したことがありませんか？（1世帯1回限り）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "shogakukin-henkan",
+      "category": "移住・定住",
+      "name": {
+        "ja": "奨学金返還支援補助金",
+        "en": "Scholarship Repayment Support Subsidy",
+        "zh": "奖学金偿还支援补助金",
+        "ko": "장학금 반환 지원 보조금",
+        "vi": "Trợ cấp hỗ trợ hoàn trả học bổng"
+      },
+      "summary": {
+        "ja": "下関市内の登録企業等に就職・起業した奨学金返還者への支援",
+        "en": "Support for scholarship recipients who have joined or founded registered companies in Shimonoseki",
+        "zh": "为在下关市内注册企业就职・创业的奖学金偿还者提供支援",
+        "ko": "시모노세키시 내 등록 기업 등에 취직・창업한 장학금 반환자를 위한 지원",
+        "vi": "Hỗ trợ người có học bổng đang hoàn trả và đã tham gia hoặc thành lập doanh nghiệp đăng ký tại Shimonoseki"
+      },
+      "amount": {
+        "ja": "年間最大12万円（返還額の1/2）、就職2年目から5年間・最大100万円"
+      },
+      "contact": {
+        "name": "産業立地・就業支援課",
+        "tel": "083-231-1357",
+        "dept": "産業立地・就業支援課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "学歴要件",
+          "question": {
+            "ja": "大学・大学院・短大・高専・専修学校（専門課程）・水産大学校を卒業または修了しましたか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "奨学金要件",
+          "question": {
+            "ja": "日本学生支援機構第一種/第二種、または下関市奨学金の貸与を受け、交付基準月時点で返還残額がありますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "就職・起業要件",
+          "question": {
+            "ja": "次のいずれかに該当しますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "choice",
+          "choices": [
+            { "value": "新卒", "label": { "ja": "新卒者：卒業翌年度以内に登録企業等に正社員就職" } },
+            { "value": "転入", "label": { "ja": "転入者：転入前または転入後90日以内にエントリー・満30歳未満・1年以内に登録企業等に正社員就職" } },
+            { "value": "起業", "label": { "ja": "起業者：特定創業支援等事業終了後90日以内にエントリー・1年以内に起業" } },
+            { "value": "該当なし", "label": { "ja": "いずれにも該当しない" }, "disqualify": true }
+          ],
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "その他",
+          "question": {
+            "ja": "交付申請基準日に市内に在住し、奨学金返還および市税の滞納がありませんか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "jutaku-shutoku-shien",
+      "category": "住宅",
+      "name": {
+        "ja": "下関市住宅取得支援事業補助金",
+        "en": "Shimonoseki Housing Acquisition Support Subsidy",
+        "zh": "下关市住宅取得支援事业补助金",
+        "ko": "시모노세키시 주택 취득 지원 사업 보조금",
+        "vi": "Trợ cấp hỗ trợ mua nhà ở thành phố Shimonoseki"
+      },
+      "summary": {
+        "ja": "市内で住宅を新築・購入する方への補助金（令和7年9月1日開始の新制度）",
+        "en": "Subsidy for those building or purchasing a home in Shimonoseki (new system from September 2025)",
+        "zh": "为在市内新建・购买住宅者提供的补助金（2025年9月1日起实施的新制度）",
+        "ko": "시내에서 주택을 신축・구입하는 분들을 위한 보조금 (2025년 9월 1일부터 시작된 새 제도)",
+        "vi": "Trợ cấp cho người xây dựng hoặc mua nhà ở trong thành phố (chế độ mới từ ngày 1 tháng 9 năm 2025)"
+      },
+      "amount": {
+        "ja": "上限250万円（費用の1/2）※三世代同居・近居+30万円、居住誘導区域+20万円等の加算あり"
+      },
+      "contact": {
+        "name": "住宅政策課",
+        "tel": "083-231-1941",
+        "dept": "住宅政策課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "旧「移住者向け住宅購入支援補助金」から移行。フラット35地域連携型と併用可" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "申請者要件",
+          "question": {
+            "ja": "自ら居住するための住宅を市内に建築または購入しますか？また、契約締結前に申請しますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "住宅要件",
+          "question": {
+            "ja": "市内登録事業者との請負・売買契約で、戸建て75㎡以上（マンション55㎡以上）の住宅ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "住宅要件",
+          "question": {
+            "ja": "新築（検査済証交付から1年以内）、または昭和56年6月1日以降の新耐震基準を満たす中古住宅ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "yamaguchi-wakamono-teijuu",
+      "category": "住宅",
+      "name": {
+        "ja": "やまぐち若者定住応援事業補助金（住宅ローン利子補給）",
+        "en": "Yamaguchi Youth Settlement Support Subsidy (Mortgage Interest Subsidy)",
+        "zh": "山口年轻人定居支援事业补助金（住房贷款利息补贴）",
+        "ko": "야마구치 청년 정주 응원 사업 보조금 (주택 대출 이자 보조)",
+        "vi": "Trợ cấp hỗ trợ định cư thanh niên Yamaguchi (Bù lãi vay mua nhà)"
+      },
+      "summary": {
+        "ja": "29歳以下の若者が住宅ローンを利用して定住する場合の利子補給",
+        "en": "Interest subsidy for young people under 30 who use a housing loan to settle in the area",
+        "zh": "为29岁以下青年利用住房贷款定居时提供的利息补贴",
+        "ko": "29세 이하 청년이 주택 대출을 이용해 정주하는 경우의 이자 보조",
+        "vi": "Bù lãi vay cho người trẻ dưới 30 tuổi sử dụng vay mua nhà để định cư"
+      },
+      "amount": {
+        "ja": "年間最大12万円（返済利息の1/2）"
+      },
+      "contact": {
+        "name": "LiveHUB しものせき",
+        "tel": "0120-540-201",
+        "dept": "共創イノベーション課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "年齢要件",
+          "question": {
+            "ja": "申請時において29歳以下ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "住宅要件",
+          "question": {
+            "ja": "自ら居住するための住宅を取得し、住宅ローンを利用していますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "居住要件",
+          "question": {
+            "ja": "下関市内に定住する意思がありますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "kekkon-shinseikatsu",
+      "category": "住宅",
+      "name": {
+        "ja": "結婚新生活支援補助金",
+        "en": "Marriage New Life Support Subsidy",
+        "zh": "结婚新生活支援补助金",
+        "ko": "결혼 신생활 지원 보조금",
+        "vi": "Trợ cấp hỗ trợ cuộc sống mới sau kết hôn"
+      },
+      "summary": {
+        "ja": "婚姻した夫婦の住宅取得・賃借・引越費用への補助（39歳以下対象・抽選制）",
+        "en": "Subsidy for housing costs and moving expenses for newly married couples (under 40, lottery-based)",
+        "zh": "对婚姻夫妇的住宅取得・租赁・搬家费用的补助（39岁以下对象・抽签制）",
+        "ko": "혼인한 부부의 주택 취득・임차・이사 비용 보조 (39세 이하 대상・추첨제)",
+        "vi": "Trợ cấp chi phí nhà ở và chuyển nhà cho các cặp đôi mới kết hôn (dưới 40 tuổi, bốc thăm)"
+      },
+      "amount": {
+        "ja": "最大30万円（夫婦ともに39歳以下）／最大60万円（夫婦ともに29歳以下）"
+      },
+      "contact": {
+        "name": "LiveHUB しものせき",
+        "tel": "0120-540-201",
+        "dept": "共創イノベーション課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "抽選制（エントリー後に抽選）" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象者要件",
+          "question": {
+            "ja": "婚姻日において夫婦ともに39歳以下ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "対象者要件",
+          "question": {
+            "ja": "世帯所得が500万円未満ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫婦ともに市内住宅に居住し、過去に本補助金を受給したことがなく、他の公的住宅・家賃補助を受けていませんか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "対象期間",
+          "question": {
+            "ja": "令和7年4月1日〜令和8年3月31日に婚姻または婚姻予定ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req5",
+          "group": "対象者要件",
+          "question": {
+            "ja": "申請後5年以上継続して下関市に居住する意思がありますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "jutaku-taishin",
+      "category": "住宅",
+      "name": {
+        "ja": "住宅耐震化促進事業補助金",
+        "en": "Housing Earthquake-Resistant Renovation Promotion Subsidy",
+        "zh": "住宅抗震化促进事业补助金",
+        "ko": "주택 내진화 촉진 사업 보조금",
+        "vi": "Trợ cấp thúc đẩy cải tạo chống động đất cho nhà ở"
+      },
+      "summary": {
+        "ja": "旧耐震基準（昭和56年5月31日以前着工）の木造住宅の耐震化工事への補助",
+        "en": "Subsidy for earthquake-resistant renovation of wooden houses built before the old seismic standard",
+        "zh": "对旧抗震标准（昭和56年5月31日前施工）木结构住宅的抗震化工程提供的补助",
+        "ko": "구 내진 기준(1981년 5월 31일 이전 착공)의 목조 주택 내진화 공사에 대한 보조",
+        "vi": "Trợ cấp cải tạo chống động đất cho nhà gỗ xây dựng trước tiêu chuẩn chống động đất cũ"
+      },
+      "amount": {
+        "ja": "上限115万円（費用の4/5）"
+      },
+      "contact": {
+        "name": "建築指導課",
+        "tel": "083-231-1380",
+        "dept": "建築指導課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "国・県補助制度との併用制度のため詳細は建築指導課へ要確認" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象住宅要件",
+          "question": {
+            "ja": "昭和56年5月31日以前に着工した木造住宅ですか？（旧耐震基準）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "申請前提",
+          "question": {
+            "ja": "市の無料耐震診断を受診済みで、倒壊の危険性が高いと判定されましたか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "jinkou-teijuu-jutaku",
+      "category": "住宅",
+      "name": {
+        "ja": "人口定住促進住宅（低廉家賃住宅）",
+        "en": "Population Settlement Promotion Housing (Low-Rent Housing)",
+        "zh": "人口定居促进住宅（廉价租金住宅）",
+        "ko": "인구 정주 촉진 주택 (저렴한 임대 주택)",
+        "vi": "Nhà ở thúc đẩy định cư dân số (Nhà thuê giá rẻ)"
+      },
+      "summary": {
+        "ja": "豊北地区へのUIJターン希望者向けの低廉家賃住宅（最長5年間）",
+        "en": "Low-rent housing for UIJ-turn migrants to the Toyokita area (up to 5 years)",
+        "zh": "面向希望UIJ回流至丰北地区者的廉价租金住宅（最长5年）",
+        "ko": "도요키타 지역으로의 UIJ턴 희망자를 위한 저렴한 임대 주택 (최장 5년)",
+        "vi": "Nhà thuê giá rẻ cho người muốn chuyển đến khu vực Toyokita theo diện UIJ (tối đa 5 năm)"
+      },
+      "amount": {
+        "ja": "月額33,000円〜（最長5年間）"
+      },
+      "contact": {
+        "name": "豊北総合支所 地域政策課",
+        "tel": "083-782-1911",
+        "dept": "豊北総合支所 地域政策課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象者要件",
+          "question": {
+            "ja": "下関市へのUIJターン希望者で、現に市外居住または転入後間もない者ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "居住地域",
+          "question": {
+            "ja": "豊北総合支所管内（角島等）への居住を希望していますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "入居条件",
+          "question": {
+            "ja": "入居後に定住先を探す意思がありますか？（最長5年間の入居）",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "ninpu-shien-kyufu",
+      "category": "子育て・妊娠",
+      "name": {
+        "ja": "妊婦のための支援給付（出産・子育て応援）",
+        "en": "Support Benefit for Pregnant Women (Childbirth & Childcare Support)",
+        "zh": "孕妇支援给付（生育・育儿应援）",
+        "ko": "임산부를 위한 지원 급부 (출산・육아 응원)",
+        "vi": "Hỗ trợ cho phụ nữ mang thai (Hỗ trợ sinh sản và nuôi con)"
+      },
+      "summary": {
+        "ja": "下関市に住民票を有する妊婦への支援給付（令和7年4月〜新制度）",
+        "en": "Support benefit for pregnant women registered in Shimonoseki (new system from April 2025)",
+        "zh": "为在下关市有住民册的孕妇提供的支援给付（2025年4月起新制度）",
+        "ko": "시모노세키시에 주민표가 있는 임산부를 위한 지원 급부 (2025년 4월부터 새 제도)",
+        "vi": "Hỗ trợ cho phụ nữ mang thai có hộ khẩu tại Shimonoseki (chế độ mới từ tháng 4 năm 2025)"
+      },
+      "amount": {
+        "ja": "出産1回につき支給（具体額は担当課へご確認ください）"
+      },
+      "contact": {
+        "name": "健康推進課",
+        "tel": "083-231-1447",
+        "dept": "健康推進課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "旧「出産・子育て応援交付金」から移行。具体額はHP未記載のため担当課へ確認要" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象者要件",
+          "question": {
+            "ja": "下関市に住民票を有する妊婦ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "手続き",
+          "question": {
+            "ja": "妊娠届出時に伴走型相談支援（面談またはオンライン）を受け、アンケートに回答しますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "funin-ippan",
+      "category": "子育て・妊娠",
+      "name": {
+        "ja": "不妊治療費助成（一般不妊治療）",
+        "en": "Infertility Treatment Cost Subsidy (General Infertility Treatment)",
+        "zh": "不孕治疗费用补助（一般不孕治疗）",
+        "ko": "불임 치료비 조성 (일반 불임 치료)",
+        "vi": "Trợ cấp chi phí điều trị vô sinh (Điều trị vô sinh thông thường)"
+      },
+      "summary": {
+        "ja": "タイミング法・人工授精等の一般不妊治療費への助成（年間9,000円以内）",
+        "en": "Subsidy for general infertility treatments such as timed intercourse and artificial insemination (up to ¥9,000/year)",
+        "zh": "对时机法・人工授精等一般不孕治疗费用的补助（每年9,000日元以内）",
+        "ko": "타이밍법・인공수정 등 일반 불임 치료비 지원 (연간 9,000엔 이내)",
+        "vi": "Trợ cấp chi phí điều trị vô sinh thông thường như phương pháp định thời gian và thụ tinh nhân tạo (tối đa 9.000 yên/năm)"
+      },
+      "amount": {
+        "ja": "年間9,000円以内（通算5年）"
+      },
+      "contact": {
+        "name": "健康推進課 母子保健係",
+        "tel": "083-231-1447",
+        "dept": "健康推進課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "3年目以降は医師判断による治療継続が必要" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫または妻が下関市内に住所を有する法律婚夫婦ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫婦の控除後前年所得合計が730万円未満ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫または妻が医療保険の被保険者等ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "対象治療",
+          "question": {
+            "ja": "医師が必要と認めた一般不妊治療（タイミング法・人工授精等）を受けていますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "funin-tokutei",
+      "category": "子育て・妊娠",
+      "name": {
+        "ja": "不妊治療費助成（特定不妊治療）",
+        "en": "Infertility Treatment Cost Subsidy (Specific Infertility Treatment)",
+        "zh": "不孕治疗费用补助（特定不孕治疗）",
+        "ko": "불임 치료비 조성 (특정 불임 치료)",
+        "vi": "Trợ cấp chi phí điều trị vô sinh (Điều trị vô sinh đặc biệt)"
+      },
+      "summary": {
+        "ja": "体外受精・顕微授精等の特定不妊治療費への助成（年間30,000円以内）",
+        "en": "Subsidy for specific infertility treatments such as IVF and ICSI (up to ¥30,000/year)",
+        "zh": "对体外受精・显微授精等特定不孕治疗费用的补助（每年30,000日元以内）",
+        "ko": "체외수정・미세수정 등 특정 불임 치료비 지원 (연간 30,000엔 이내)",
+        "vi": "Trợ cấp chi phí điều trị vô sinh đặc biệt như thụ tinh trong ống nghiệm và tiêm tinh trùng (tối đa 30.000 yên/năm)"
+      },
+      "amount": {
+        "ja": "年間30,000円以内（通算5年）"
+      },
+      "contact": {
+        "name": "健康推進課 母子保健係",
+        "tel": "083-231-1447",
+        "dept": "健康推進課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "3年目以降は医師判断による治療継続が必要" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫または妻が下関市内に住所を有する法律婚夫婦ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫婦の控除後前年所得合計が730万円未満ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "対象者要件",
+          "question": {
+            "ja": "夫または妻が医療保険の被保険者等ですか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "対象治療",
+          "question": {
+            "ja": "体外受精・顕微授精等の特定不妊治療を受けていますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "kodomo-mirai-ouen",
+      "category": "子育て・妊娠",
+      "name": {
+        "ja": "こどもの未来応援補助金（子どもの居場所提供）",
+        "en": "Children's Future Support Subsidy (Providing Safe Spaces for Children)",
+        "zh": "儿童未来应援补助金（提供儿童活动场所）",
+        "ko": "어린이 미래 응원 보조금 (아이들의 쉼터 제공)",
+        "vi": "Trợ cấp hỗ trợ tương lai trẻ em (Cung cấp nơi an toàn cho trẻ em)"
+      },
+      "summary": {
+        "ja": "市内で子どもの居場所（こども食堂等）を運営する団体・個人への活動費補助",
+        "en": "Activity expense subsidy for groups or individuals operating safe spaces for children in the city",
+        "zh": "对在市内运营儿童活动场所（儿童食堂等）的团体・个人提供活动经费补助",
+        "ko": "시내에서 아이들의 쉼터(어린이 식당 등)를 운영하는 단체・개인에 대한 활동비 보조",
+        "vi": "Trợ cấp chi phí hoạt động cho các tổ chức hoặc cá nhân vận hành nơi an toàn cho trẻ em trong thành phố"
+      },
+      "amount": {
+        "ja": "活動経費の一部（詳細は担当課へご確認ください）"
+      },
+      "contact": {
+        "name": "こども家庭課",
+        "tel": "",
+        "dept": "こども家庭課"
+      },
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/",
+      "kiyouUrl": "",
+      "status": "active",
+      "note": { "ja": "補助対象期間：令和8年4月1日〜令和9年2月28日に支出するもの" },
+      "requirements": [
+        {
+          "id": "req1",
+          "group": "対象者要件",
+          "question": {
+            "ja": "市内を主たる活動拠点とする団体または個人で、市内で子どもの居場所を運営していますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req2",
+          "group": "対象者要件",
+          "question": {
+            "ja": "暴力団関係者でなく、公序良俗に反しない活動を行っていますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req3",
+          "group": "活動要件",
+          "question": {
+            "ja": "月1回以上の活動を3か月以上開催し、主な利用者がこどもと保護者で、食物アレルギー対応等の安全対策を実施していますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        },
+        {
+          "id": "req4",
+          "group": "活動要件",
+          "question": {
+            "ja": "市相談窓口へのつなぎを行っていますか？",
+            "en": "※この項目は日本語のみです。担当課にご確認ください。",
+            "zh": "※此项目仅提供日语版本，请咨询负责部门确认。",
+            "ko": "※이 항목은 일본어만 제공됩니다. 담당 부서에 문의하시기 바랍니다.",
+            "vi": "※Mục này chỉ có bằng tiếng Nhật. Vui lòng liên hệ bộ phận phụ trách để xác nhận."
+          },
+          "type": "yesno",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

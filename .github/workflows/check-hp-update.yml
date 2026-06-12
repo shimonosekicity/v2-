@@ -1,0 +1,88 @@
+name: 月次HP変更検知
+
+on:
+  schedule:
+    # 毎月1日 午前9時（JST = UTC 00:00）に実行
+    - cron: '0 0 1 * *'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  check-hp:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: HP変更検知スクリプト実行
+        id: check
+        run: |
+          python scripts/check_hp.py
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: ハッシュファイルを更新してコミット
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/hashes.json
+          git diff --staged --quiet || git commit -m "chore: HP変更検知ハッシュを更新 ($(date '+%Y-%m-%d'))"
+          git push
+        continue-on-error: true
+
+      - name: 変更ありの場合にIssueを作成
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let changedItems = [];
+            try {
+              changedItems = JSON.parse(fs.readFileSync('scripts/changed_urls.json', 'utf8'));
+            } catch (e) {
+              changedItems = [{ name: '不明', url: '詳細はログを参照' }];
+            }
+
+            const urlList = changedItems
+              .map(item => `- **${item.name}**: ${item.url}`)
+              .join('\n');
+
+            const today = new Date().toLocaleDateString('ja-JP', {
+              year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Asia/Tokyo'
+            });
+
+            const body = `## ⚠️ HP変更の可能性があります
+
+            **検知日**: ${today}
+
+            以下のページに変更が検出されました。要綱の内容を確認し、必要であれば \`data/subsidies.json\` を更新してください。
+
+            ${urlList}
+
+            ## 対応手順
+
+            1. 上記URLを開き、補助金の要件・金額・担当課等に変更がないか確認する
+            2. 変更がある場合は、Googleスプレッドシートのデータを更新する
+            3. スプレッドシートのメニュー「補助金ツール」→「JSONを書き出す」を実行
+            4. 生成された \`subsidies.json\` をこのリポジトリに反映する（またはGAS自動Push）
+            5. このIssueをクローズする
+
+            > ⚠️ このIssueはHP変更の「可能性」の通知です。レイアウト変更等でも発生することがあります。必ず要綱本文を人が確認してください。
+            `;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[要確認] HP変更の可能性 (${today})`,
+              body: body.replace(/^ {12}/gm, ''),
+              labels: ['data-update-needed']
+            });

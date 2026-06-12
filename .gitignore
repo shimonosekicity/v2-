@@ -1,0 +1,4 @@
+scripts/hashes.json
+.claude/
+node_modules/
+*.log

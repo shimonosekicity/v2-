@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="下関市 移住・定住支援補助金 要件確認アプリ">
+  <meta name="theme-color" content="#1a5f8a">
+  <title>下関市 補助金 要件確認</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="city-name">下関市</span>
+        <span id="app-title">補助金 要件確認</span>
+      </div>
+      <nav class="lang-switcher" aria-label="Language / 言語切替">
+        <button class="lang-btn active" data-lang="ja" aria-label="日本語">日本語</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="zh" aria-label="中文">中文</button>
+        <button class="lang-btn" data-lang="ko" aria-label="한국어">한국어</button>
+        <button class="lang-btn" data-lang="vi" aria-label="Tiếng Việt">VI</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <!-- ===== Screen 1: 補助金リスト ===== -->
+    <section id="screen-list" class="screen active" aria-label="補助金一覧">
+      <p id="app-subtitle" style="font-size:14px;color:var(--color-text-sub);margin-bottom:12px;font-weight:600;"></p>
+
+      <div class="disclaimer" role="alert">
+        <span id="disclaimer-text"></span>
+      </div>
+
+      <div class="search-bar">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="search-input" placeholder="補助金名で検索" aria-label="補助金名で検索">
+      </div>
+
+      <div class="category-tabs" id="category-tabs" role="tablist" aria-label="カテゴリ"></div>
+
+      <div class="subsidy-list" id="subsidy-list" role="list"></div>
+    </section>
+
+    <!-- ===== Screen 2: 要件チェック ===== -->
+    <section id="screen-check" class="screen" aria-label="要件チェック">
+      <div class="screen-header">
+        <button class="back-btn" id="back-from-check" aria-label="一覧に戻る">← 一覧に戻る</button>
+      </div>
+
+      <!-- Subsidy info -->
+      <div class="subsidy-info-card" id="info-card"></div>
+
+      <!-- Progress -->
+      <div class="progress-wrap">
+        <div class="progress-label" id="progress-label">進捗: 0 / 0</div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- Questions -->
+      <div id="requirements-container"></div>
+
+      <!-- Action buttons -->
+      <div class="action-btns" id="check-actions"></div>
+    </section>
+
+    <!-- ===== Screen 3: 詳細・要綱 ===== -->
+    <section id="screen-details" class="screen" aria-label="詳細・要綱">
+      <div class="screen-header">
+        <button class="back-btn" id="back-from-details" aria-label="チェックに戻る">← チェックに戻る</button>
+      </div>
+
+      <h2 id="details-title" style="font-size:17px;font-weight:800;margin-bottom:16px;line-height:1.4;"></h2>
+
+      <!-- Links -->
+      <div class="details-section">
+        <h3>🔗 リンク・担当課</h3>
+        <div class="details-links" id="details-links"></div>
+      </div>
+
+      <!-- Note -->
+      <div class="details-section" id="details-note">
+        <h3>📌 備考</h3>
+        <div class="note-text"></div>
+      </div>
+
+      <!-- Requirements (Japanese full text) -->
+      <div class="details-section">
+        <h3>📋 要件一覧（日本語）</h3>
+        <ul class="req-list" id="details-req-list"></ul>
+      </div>
+
+      <!-- Print -->
+      <div class="action-btns" style="margin-top:8px;">
+        <button class="btn-primary" id="print-btn">🖨 印刷 / PDF保存</button>
+        <button class="back-btn btn-secondary" id="back-from-details-to-list" style="text-align:center;">← 一覧に戻る</button>
+      </div>
+
+      <div class="disclaimer" style="margin-top:16px;">
+        <span id="disclaimer-text-details">本アプリの情報は令和8年度（2026年度）時点の調査に基づく参考情報です。最終的な対象可否は各担当課の判断によります。最新の要綱を必ずご確認ください。</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
