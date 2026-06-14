@@ -29,6 +29,12 @@ function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   el('screen-' + name).classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  sessionStorage.setItem('currentScreen', name);
+  if (state.currentSubsidy) {
+    sessionStorage.setItem('currentSubsidyId', state.currentSubsidy.id);
+  } else {
+    sessionStorage.removeItem('currentSubsidyId');
+  }
 }
 
 // ===== Data loading =====
@@ -473,7 +479,20 @@ async function init() {
   // Print button
   el('print-btn').addEventListener('click', () => window.print());
 
-  // Initial render
+  // Restore screen from sessionStorage
+  const savedScreen = sessionStorage.getItem('currentScreen');
+  const savedSubsidyId = sessionStorage.getItem('currentSubsidyId');
+  if (savedScreen && savedScreen !== 'list' && savedSubsidyId) {
+    const sub = state.subsidies.find(s => s.id === savedSubsidyId);
+    if (sub) {
+      state.currentSubsidy = sub;
+      renderAll();
+      showScreen(savedScreen);
+      if (savedScreen === 'check') renderCheck();
+      else if (savedScreen === 'details') renderDetails();
+      return;
+    }
+  }
   renderAll();
   showScreen('list');
 }
