@@ -25,7 +25,7 @@ function text(obj) {
 
 function el(id) { return document.getElementById(id); }
 
-function showScreen(name) {
+function showScreen(name, pushHistory = true) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   el('screen-' + name).classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -34,6 +34,9 @@ function showScreen(name) {
     sessionStorage.setItem('currentSubsidyId', state.currentSubsidy.id);
   } else {
     sessionStorage.removeItem('currentSubsidyId');
+  }
+  if (pushHistory) {
+    history.pushState({ screen: name, subsidyId: state.currentSubsidy?.id ?? null }, '');
   }
 }
 
@@ -192,7 +195,7 @@ function renderRequirements() {
   el('progress-fill').style.width = pct + '%';
   el('progress-label').textContent = `${t('checklistProgress')}: ${answered} / ${total}`;
 
-  // Result banner (if any)
+  // Result banner (created but appended after the triggering card)
   const resultBanner = document.createElement('div');
   resultBanner.id = 'result-banner';
   resultBanner.className = 'result-banner hidden';
@@ -209,7 +212,6 @@ function renderRequirements() {
       <div class="result-sub">${t('result_ng_sub')}</div>
       <div class="result-reason">${t('result_ng_group')}「${dq.group}」</div>
     `;
-    container.appendChild(resultBanner);
   } else if (allAnswered) {
     resultBanner.className = 'result-banner ok';
     resultBanner.innerHTML = `
@@ -217,7 +219,6 @@ function renderRequirements() {
       <div class="result-title">${t('result_ok')}</div>
       <div class="result-sub">${t('result_ok_sub')}</div>
     `;
-    container.appendChild(resultBanner);
   }
 
   // Group requirements by group label
@@ -321,7 +322,17 @@ function renderRequirements() {
     }
 
     container.appendChild(card);
+
+    // バナーを対象外になった質問カードの直後に挿入
+    if (hasDisqualify && isDisq) {
+      container.appendChild(resultBanner);
+    }
   });
+
+  // 全問クリアの場合はリストの末尾に追加
+  if (allAnswered && !hasDisqualify) {
+    container.appendChild(resultBanner);
+  }
 
   // Action buttons
   const actionDiv = el('check-actions');
@@ -479,6 +490,20 @@ async function init() {
   // Print button
   el('print-btn').addEventListener('click', () => window.print());
 
+  // ブラウザ戻るボタンでアプリ画面を戻る
+  window.addEventListener('popstate', (e) => {
+    const s = e.state?.screen ?? 'list';
+    const sid = e.state?.subsidyId;
+    if (sid && s !== 'list') {
+      const sub = state.subsidies.find(x => x.id === sid);
+      if (sub) state.currentSubsidy = sub;
+    }
+    showScreen(s, false);
+    if (s === 'list') renderList();
+    else if (s === 'check') renderCheck();
+    else if (s === 'details') renderDetails();
+  });
+
   // Restore screen from sessionStorage
   const savedScreen = sessionStorage.getItem('currentScreen');
   const savedSubsidyId = sessionStorage.getItem('currentSubsidyId');
@@ -494,7 +519,9 @@ async function init() {
     }
   }
   renderAll();
-  showScreen('list');
+  // 初期状態を history に記録（replaceState で余分な履歴を作らない）
+  history.replaceState({ screen: 'list', subsidyId: null }, '');
+  showScreen('list', false);
 }
 
 document.addEventListener('DOMContentLoaded', init);
