@@ -361,6 +361,14 @@ function renderRequirements() {
 }
 
 function scrollToNext(currentId, reqs, currentIdx) {
+  // 対象外になった場合はバナーへスクロール
+  if (state.disqualifiedReq?.id === currentId) {
+    setTimeout(() => {
+      const banner = document.getElementById('result-banner');
+      if (banner) banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150);
+    return;
+  }
   const nextIdx = currentIdx + 1;
   if (nextIdx < reqs.length) {
     setTimeout(() => {
@@ -466,20 +474,11 @@ async function init() {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
 
-  // Back buttons
-  el('back-from-check').addEventListener('click', () => {
-    showScreen('list');
-    renderList();
-  });
-
-  el('back-from-details').addEventListener('click', () => {
-    showScreen('check');
-  });
-
-  el('back-from-details-to-list').addEventListener('click', () => {
-    showScreen('list');
-    renderList();
-  });
+  // Back buttons — history.back() でスタックを汚さない
+  el('back-from-check').addEventListener('click', () => history.back());
+  el('back-from-details').addEventListener('click', () => history.back());
+  // 詳細→一覧は check と details の2ステップ分戻る
+  el('back-from-details-to-list').addEventListener('click', () => history.go(-2));
 
   // Search
   el('search-input').addEventListener('input', e => {
@@ -504,6 +503,9 @@ async function init() {
     else if (s === 'details') renderDetails();
   });
 
+  // 初期状態を history に記録
+  history.replaceState({ screen: 'list', subsidyId: null }, '');
+
   // Restore screen from sessionStorage
   const savedScreen = sessionStorage.getItem('currentScreen');
   const savedSubsidyId = sessionStorage.getItem('currentSubsidyId');
@@ -512,15 +514,17 @@ async function init() {
     if (sub) {
       state.currentSubsidy = sub;
       renderAll();
-      showScreen(savedScreen);
+      // check なら check を push、details なら check→details と積む
+      if (savedScreen === 'details') {
+        history.pushState({ screen: 'check', subsidyId: sub.id }, '');
+      }
+      showScreen(savedScreen, true);
       if (savedScreen === 'check') renderCheck();
       else if (savedScreen === 'details') renderDetails();
       return;
     }
   }
   renderAll();
-  // 初期状態を history に記録（replaceState で余分な履歴を作らない）
-  history.replaceState({ screen: 'list', subsidyId: null }, '');
   showScreen('list', false);
 }
 
