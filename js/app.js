@@ -500,6 +500,11 @@ async function init() {
 
   // Back buttons — history.back() でスタックを汚さない
   el('back-from-check').addEventListener('click', () => history.back());
+  el('detail-tab-btn').addEventListener('click', () => {
+    renderDetails();
+    history.pushState({ screen: 'details', subsidyId: state.currentSubsidy?.id }, '');
+    showScreen('details');
+  });
   el('back-from-details').addEventListener('click', () => history.back());
   // 詳細→一覧は check と details の2ステップ分戻る
   el('back-from-details-to-list').addEventListener('click', () => history.go(-2));
