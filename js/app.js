@@ -435,6 +435,30 @@ function renderDetails() {
     noteDiv.classList.add('hidden');
   }
 
+  // Documents list
+  const docsSection = el('details-documents');
+  const docList = el('details-doc-list');
+  const docNote = el('details-doc-note');
+  docList.innerHTML = '';
+  docNote.textContent = '';
+  const docs = sub.documents;
+  if (docs && (docs.ja.length > 0 || docs.note)) {
+    docsSection.classList.remove('hidden');
+    docs.ja.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      docList.appendChild(li);
+    });
+    if (docs.note) {
+      docNote.textContent = docs.note;
+      docNote.classList.remove('hidden');
+    } else {
+      docNote.classList.add('hidden');
+    }
+  } else {
+    docsSection.classList.add('hidden');
+  }
+
   // Requirements list
   const reqList = el('details-req-list');
   reqList.innerHTML = '';

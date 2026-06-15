@@ -72,11 +72,37 @@
           },
           "type": "choice",
           "choices": [
-            { "value": "就業", "label": { "ja": "県マッチングリスト掲載企業に週20時間以上・無期雇用で就業" } },
-            { "value": "テレワーク", "label": { "ja": "自己の意思で移住し移住元の業務を継続（テレワーク）" } },
-            { "value": "専門人材", "label": { "ja": "プロフェッショナル人材事業等を利用し県内企業に新規就業" } },
-            { "value": "創業", "label": { "ja": "やまぐち創業補助金の交付決定を受けている" } },
-            { "value": "該当なし", "label": { "ja": "いずれにも該当しない" }, "disqualify": true }
+            {
+              "value": "就業",
+              "label": {
+                "ja": "県マッチングリスト掲載企業に週20時間以上・無期雇用で就業"
+              }
+            },
+            {
+              "value": "テレワーク",
+              "label": {
+                "ja": "自己の意思で移住し移住元の業務を継続（テレワーク）"
+              }
+            },
+            {
+              "value": "専門人材",
+              "label": {
+                "ja": "プロフェッショナル人材事業等を利用し県内企業に新規就業"
+              }
+            },
+            {
+              "value": "創業",
+              "label": {
+                "ja": "やまぐち創業補助金の交付決定を受けている"
+              }
+            },
+            {
+              "value": "該当なし",
+              "label": {
+                "ja": "いずれにも該当しない"
+              },
+              "disqualify": true
+            }
           ],
           "required": true
         },
@@ -119,7 +145,15 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "就業内容別申請書（様式第1-1〜1-4号から選択）",
+          "就業証明書（様式第2号または第2-1〜2-3号）",
+          "暴力団排除誓約書（様式第3号）",
+          "交付請求書（様式第5号）"
+        ]
+      }
     },
     {
       "id": "yamaguchi-telework-ijuu",
@@ -149,7 +183,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/125628.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "" },
+      "note": {
+        "ja": ""
+      },
       "requirements": [
         {
           "id": "req1",
@@ -176,10 +212,31 @@
           },
           "type": "choice",
           "choices": [
-            { "value": "就業", "label": { "ja": "県リスト掲載企業に週20時間以上・無期雇用で就業" } },
-            { "value": "テレワーク", "label": { "ja": "自己の意思で移住し移住元の業務を継続（テレワーク）" } },
-            { "value": "創業", "label": { "ja": "やまぐち創業補助金の交付決定を受けている" } },
-            { "value": "該当なし", "label": { "ja": "いずれにも該当しない" }, "disqualify": true }
+            {
+              "value": "就業",
+              "label": {
+                "ja": "県リスト掲載企業に週20時間以上・無期雇用で就業"
+              }
+            },
+            {
+              "value": "テレワーク",
+              "label": {
+                "ja": "自己の意思で移住し移住元の業務を継続（テレワーク）"
+              }
+            },
+            {
+              "value": "創業",
+              "label": {
+                "ja": "やまぐち創業補助金の交付決定を受けている"
+              }
+            },
+            {
+              "value": "該当なし",
+              "label": {
+                "ja": "いずれにも該当しない"
+              },
+              "disqualify": true
+            }
           ],
           "required": true
         },
@@ -209,7 +266,15 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "補助金交付申請書（様式第1号）",
+          "就業証明書（就業：様式第2号 / テレワーク：様式第3号）",
+          "交付請求書（様式第5号）"
+        ],
+        "note": "詳細書類はLiveHUBしものせき（0120-540-201）にご確認ください。"
+      }
     },
     {
       "id": "shimonoseki-kurashi-support",
@@ -239,7 +304,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/site/citypromotion/123148.html",
       "kiyouUrl": "",
       "status": "closed",
-      "note": { "ja": "令和8年度新規申請受付終了" },
+      "note": {
+        "ja": "令和8年度新規申請受付終了"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -293,7 +360,15 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "補助金交付申請書（第1号様式）",
+          "賃貸借契約書の写し",
+          "転入後の住民票の写し",
+          "市税の滞納がないことが分かる書類"
+        ]
+      }
     },
     {
       "id": "teijuu-shorekin",
@@ -323,7 +398,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/95181.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "1世帯につき1回限り" },
+      "note": {
+        "ja": "1世帯につき1回限り"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -377,7 +454,11 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [],
+        "note": "必要書類は各総合支所（豊田・豊浦・豊北）地域政策課にお問い合わせください。"
+      }
     },
     {
       "id": "shogakukin-henkan",
@@ -407,7 +488,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/58/50536.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "" },
+      "note": {
+        "ja": ""
+      },
       "requirements": [
         {
           "id": "req1",
@@ -447,10 +530,31 @@
           },
           "type": "choice",
           "choices": [
-            { "value": "新卒", "label": { "ja": "新卒者：卒業翌年度以内に登録企業等に正社員就職" } },
-            { "value": "転入", "label": { "ja": "転入者：満30歳未満で、転入前または転入後1年以内に登録企業等に正社員就職" } },
-            { "value": "起業", "label": { "ja": "起業者：特定創業支援等事業終了後1年以内に起業" } },
-            { "value": "該当なし", "label": { "ja": "いずれにも該当しない" }, "disqualify": true }
+            {
+              "value": "新卒",
+              "label": {
+                "ja": "新卒者：卒業翌年度以内に登録企業等に正社員就職"
+              }
+            },
+            {
+              "value": "転入",
+              "label": {
+                "ja": "転入者：満30歳未満で、転入前または転入後1年以内に登録企業等に正社員就職"
+              }
+            },
+            {
+              "value": "起業",
+              "label": {
+                "ja": "起業者：特定創業支援等事業終了後1年以内に起業"
+              }
+            },
+            {
+              "value": "該当なし",
+              "label": {
+                "ja": "いずれにも該当しない"
+              },
+              "disqualify": true
+            }
           ],
           "required": true
         },
@@ -480,7 +584,14 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "申請候補者認定申請書（就業：様式第1号 / 転入：様式第2号 / 起業：様式第3号）",
+          "エントリー必要書類別表（市HPよりダウンロード）",
+          "雇用証明書（様式第12号）"
+        ]
+      }
     },
     {
       "id": "jutaku-shutoku-shien",
@@ -510,7 +621,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/70/134729.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "旧「移住者向け住宅購入支援補助金」から移行。フラット35地域連携型と併用可" },
+      "note": {
+        "ja": "旧「移住者向け住宅購入支援補助金」から移行。フラット35地域連携型と併用可"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -564,7 +677,14 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "補助金交付申請書（市外転入者：様式第1号の1 / 市内転居者：様式第1号の2）",
+          "必要書類一覧（市HPのExcelファイルを参照）"
+        ],
+        "note": "詳細は市HP掲載「必要書類一覧（Excel）」または住宅政策課（083-231-1941）へご確認ください。"
+      }
     },
     {
       "id": "yamaguchi-wakamono-teijuu",
@@ -594,7 +714,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/95181.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "" },
+      "note": {
+        "ja": ""
+      },
       "requirements": [
         {
           "id": "req1",
@@ -635,7 +757,18 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "交付申請書（別記第1号様式）",
+          "返済予定表（別紙1）",
+          "誓約書兼同意書（別紙2）",
+          "住民票の写し",
+          "返済者名が分かる書類",
+          "住宅ローン契約書の写し",
+          "土地・建物登記簿謄本"
+        ]
+      }
     },
     {
       "id": "kekkon-shinseikatsu",
@@ -665,7 +798,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/44/134497.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "抽選制（エントリー後に抽選）" },
+      "note": {
+        "ja": "抽選制（エントリー後に抽選）"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -745,7 +880,20 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "交付申請書兼実績報告書（様式第1号）",
+          "戸籍全部事項証明書（戸籍謄本）または婚姻届受理証明書",
+          "住民票の写し（世帯全員記載）",
+          "夫婦それぞれの所得（課税）証明書",
+          "貸与型奨学金の返済額が分かる書類（該当者のみ）",
+          "〔賃借の場合〕賃貸借契約書の写し・賃料等の領収書",
+          "〔取得の場合〕売買契約書及び領収書の写し",
+          "〔リフォームの場合〕工事請負契約書及び領収書の写し",
+          "〔引越の場合〕引越し費用の領収書・引越し先住所が分かる書類"
+        ]
+      }
     },
     {
       "id": "jutaku-taishin",
@@ -775,7 +923,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/77/2585.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "国・県補助制度との併用制度のため詳細は建築指導課へ要確認" },
+      "note": {
+        "ja": "国・県補助制度との併用制度のため詳細は建築指導課へ要確認"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -816,7 +966,23 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "補助金交付申請書（様式第1号）",
+          "住宅耐震化促進事業実施計画書（様式第2号）",
+          "市税の滞納がないことを示す証明書",
+          "所有者であることを証する書類（登記事項証明書等）",
+          "建築確認年月日が確認できる書類（確認済証の写し等）",
+          "改修事業費の見積書（内訳付き）",
+          "住民票の写し（居住確認用）",
+          "耐震診断の結果報告書（写し可）",
+          "補強計画書（設計上部構造評点確認用・写し可）",
+          "耐震補強工事の内容が分かる図面",
+          "対象住宅の外観写真（東西南北4面）",
+          "返信用封筒（110円切手貼付）"
+        ]
+      }
     },
     {
       "id": "jinkou-teijuu-jutaku",
@@ -846,7 +1012,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/95181.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "" },
+      "note": {
+        "ja": ""
+      },
       "requirements": [
         {
           "id": "req1",
@@ -887,7 +1055,11 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [],
+        "note": "必要書類は豊北総合支所地域政策課（083-782-1911）にお問い合わせください。"
+      }
     },
     {
       "id": "ninpu-shien-kyufu",
@@ -917,7 +1089,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/51/84329.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "旧「出産・子育て応援交付金」から移行。具体額はHP未記載のため担当課へ確認要" },
+      "note": {
+        "ja": "旧「出産・子育て応援交付金」から移行。具体額はHP未記載のため担当課へ確認要"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -945,7 +1119,14 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "妊婦給付認定申請兼出産応援ギフト支給金申請書",
+          "本人確認書類（マイナンバーカード・運転免許証・パスポートなど）",
+          "金融機関口座が確認できるもの"
+        ]
+      }
     },
     {
       "id": "funin-ippan",
@@ -975,7 +1156,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/51/5679.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "3年目以降は医師判断による治療継続が必要" },
+      "note": {
+        "ja": "3年目以降は医師判断による治療継続が必要"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -1029,7 +1212,16 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "一般不妊治療費助成事業申請書",
+          "医療機関等証明書（産婦人科・泌尿器科・薬局 各別様式）",
+          "住民票の写し（続柄記載・1か月以内発行・マイナンバー無記載）",
+          "戸籍謄本（全部事項証明）※夫婦確認不可の場合のみ",
+          "夫及び妻の所得課税証明書等"
+        ]
+      }
     },
     {
       "id": "funin-tokutei",
@@ -1059,7 +1251,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/51/5679.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "3年目以降は医師判断による治療継続が必要" },
+      "note": {
+        "ja": "3年目以降は医師判断による治療継続が必要"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -1113,7 +1307,11 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [],
+        "note": "令和4年4月から保険適用となりました。現在の助成内容はこども家庭センター（083-231-1353）にお問い合わせください。"
+      }
     },
     {
       "id": "kodomo-mirai-ouen",
@@ -1143,7 +1341,9 @@
       "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/44/154748.html",
       "kiyouUrl": "",
       "status": "active",
-      "note": { "ja": "補助対象期間：令和8年4月1日〜令和9年2月28日に支出するもの" },
+      "note": {
+        "ja": "補助対象期間：令和8年4月1日〜令和9年2月28日に支出するもの"
+      },
       "requirements": [
         {
           "id": "req1",
@@ -1197,7 +1397,17 @@
           "type": "yesno",
           "required": true
         }
-      ]
+      ],
+      "documents": {
+        "ja": [
+          "補助金申請書（様式第1号）",
+          "事業計画書（様式第2号）",
+          "収支計画書（様式第3号）",
+          "団体の定款・会則またはこれに代わるもの",
+          "役員等の名簿",
+          "概算払請求書（様式第13号）※概算払を希望する場合のみ"
+        ]
+      }
     }
   ]
 }
