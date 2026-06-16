@@ -254,6 +254,22 @@ function renderRequirements() {
       <div class="question-text">${questionText}</div>
     `;
 
+    // reqNote: collapsible list (e.g. 条件不利地域の全一覧)
+    if (req.reqNote && req.reqNote.length > 0) {
+      const details = document.createElement('details');
+      details.className = 'req-note-details';
+      const summary = document.createElement('summary');
+      summary.textContent = '▼ 対象地域の一覧を確認する';
+      details.appendChild(summary);
+      req.reqNote.forEach(line => {
+        const p = document.createElement('p');
+        p.className = 'req-note-line';
+        p.textContent = line;
+        details.appendChild(p);
+      });
+      card.appendChild(details);
+    }
+
     // Answer controls
     const answered_val = state.answers[req.id];
 

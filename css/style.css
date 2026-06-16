@@ -648,6 +648,33 @@ button {
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
+.req-note-details {
+  margin: 10px 0 6px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: #f8f9fc;
+}
+.req-note-details summary {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.req-note-details summary::-webkit-details-marker { display: none; }
+.req-note-details[open] summary { border-bottom: 1px solid var(--color-border); }
+.req-note-line {
+  margin: 0;
+  padding: 6px 14px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--color-text-sub);
+  border-bottom: 1px solid var(--color-border);
+}
+.req-note-line:last-child { border-bottom: none; }
+
 .doc-list { list-style: none; margin: 0 0 8px; padding: 0; }
 .doc-list li {
   padding: 8px 0 8px 20px;
