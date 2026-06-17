@@ -452,6 +452,7 @@
     {
       "id": "teijuu-shorekin",
       "category": "移住・定住",
+      "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/1048.html",
       "name": {
         "ja": "定住奨励金",
         "en": "Permanent Residence Incentive Grant",
@@ -474,7 +475,6 @@
         "tel": "",
         "dept": "地域政策課"
       },
-      "sourceUrl": "https://www.city.shimonoseki.lg.jp/soshiki/6/95181.html",
       "kiyouUrl": "",
       "status": "active",
       "note": {
